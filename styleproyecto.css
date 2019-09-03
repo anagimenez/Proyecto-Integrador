@@ -11,14 +11,45 @@ a {
   color: black;
   text-decoration: none;
 }
+/* navigation */
+.menu li {
+  display: none;
+  margin: 0 auto;
+}
+.menu .logo {
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width:768px) {
 
-.menu, .main-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
+@media (min-width:1024px) {
+  .menu, .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo a {
+    display: none;
+  }
+  .inicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .featured-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .mid {
+    display: flex;
+    flex-direction: column;
+  }
 }
