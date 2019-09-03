@@ -11,24 +11,106 @@ a {
   color: black;
   text-decoration: none;
 }
-/* navigation */
-.menu li {
-  display: none;
+body {
+  background-color: rgb(246,247,249);
+  max-width: 720px;
   margin: 0 auto;
 }
+h1 , h2 {
+  font-family: 'Lato', sans-serif;
+}
+p , a {
+  font-family: 'Libre Baskerville', serif;
+}
+/* BARRA DE NAVEGACION */
+header, footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.menu li {
+  display: none;
+}
+.menu a {
+  font-family: 'Lato', sans-serif;
+}
 .menu .logo {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* BIENVENIDA */
+section {
+  top: 60px;
   width: 100%;
 }
+.img_wel, .product, .product2 {
+  position: relative;
+}
+.image_home {
+  width: 100%;
+}
+.welcome, .home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* DESTACADOS */
+.featured {
+  margin-top: 60px;
+  text-align: center;
+  padding: 40px 0;
+}
+.featured-products h1 {
+  text-align: center;
+}
+.photo {
+  width: 100%;
+}
+footer {
+  display: none;
+}
+
 @media (min-width:768px) {
 
 }
 
 @media (min-width:1024px) {
+  body {
+    max-width: 1200px;
+  }
+  header, footer {
+    position: relative;
+  }
+  section {
+    top: 0;
+  }
+  .menu li {
+    display:flex;
+  }
   .menu, .main-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .img_wel {
+    overflow: hidden;
+  }
+  .img_wel div {
+    float: left;
+    width: 50%;
+  }
+  .welcome {
+    position: static;
+    text-align: left;
+    transform: translate(0,0);
+    padding: 90px;
   }
 
   .logo {
@@ -38,18 +120,25 @@ a {
   .logo a {
     display: none;
   }
-  .inicio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .featured{
+    margin-top: 0;
   }
+
   .featured-products {
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+  .product {
+    width: 33.33%;
+  }
   .mid {
+    width: 33.33%;
     display: flex;
     flex-direction: column;
+  }
+  footer {
+    display: block;
   }
 }
