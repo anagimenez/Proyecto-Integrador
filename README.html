@@ -12,16 +12,18 @@
   <body>
     <header>
 
-    <img class="logo" src="images/logo.jpg" alt="Imagen logo">
-    <a href="#" class="toggle-nav">
-     <span class="fa fa-bars"></span>
-    </a>
-   <nav class="toggle-nav">
-    <div class="container menu">
+     <nav class="toggle-nav">
+      <div class="container_menu">
              <ul class="menu">
                <li><a href="#">Home</a></li>
                <li><a href="cocina.html">La cocina</a></li>
                <li><a href="recetas.html">Recetas</a></li>
+               <li class="logo">
+                 <img src="images/logo.jpg" alt="Imagen logo">
+                 <a href="#" class="toggle-nav">
+                   <span class="fa fa-bars"></span>
+                 </a>
+               </li>
                <li><a href="contacto.html">Contacto</a></li>
                <li><a href="loginproyecto.html">Login</a></li>
                <li><a href="registroproyecto.html">Registrate</a></li>
@@ -33,11 +35,15 @@
 
 
  <!-- foto home y parrafo de bienvenida -->
+      <div class="">
+              <img class="home" src="images/masadepan.jpg" alt="Imagen home">
+      </div>
+      <div class="">
+        <h2>Bienvenido!</h2>
+        <p class="home">Disfruta de nuestras delicias...</p>
+        <a class="pedido" href="lacocina.html">Haga su pedido</a>
+      </div>
 
-      <img class="home" src="images/masadepan.jpg" alt="Imagen home">
-      <h2>Bienvenido!</h2>
-      <p class="home">Disfruta de nuestras delicias...</p>
-      <a class="pedido" href="lacocina.html">Haga su pedido</a>
 
  <!-- Productos destacados -->
       <section class="featured products">
@@ -68,8 +74,8 @@
       </section>
 
  <!-- Footer -->
-      <footer class="main-footer">
-       <ul>
+      <footer>
+       <ul class="main-footer">
         <li><a href="README.html">Home</a></li>
         <li><a href="lacocina.html">La cocina</a></li>
         <li><a href="recetas.html">Recetas</a></li>
