@@ -5,26 +5,51 @@
     <link rel="stylesheet" href="styleproyecto.css">
     <title>Iniciar sesión</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville&display=swap" rel="stylesheet">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0, shrink-to-fit=no”>
   </head>
   <body>
     <header class="login">
-      <a class="logo" href="README.html">
-      <img class="logo" src="images/logo.jpg" alt="Imagen logo">
-</a>
-      <a href="#" class="toggle-nav">
-      <span class="fa fa-bars"></span>
-     </a>
+      <nav class="toggle-nav">
+       <div class="container_menu">
+              <ul class="menu">
+                <li><a href="README.html">Home</a></li>
+                <li><a href="cocina.html">La cocina</a></li>
+                <li class="logo">
+                  <a class="logo" href="README.html">
+                  <img src="images/logo.jpg" alt="Imagen logo">
+                </a>
+                  <a href="#" class="toggle-nav">
+                    <span class="fa fa-bars"></span>
+                  </a>
+                </li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+           </nav>
+
+      </header>
     </header>
     <div class="container">
           <h1>Iniciar sesión</h1>
+          <div class="">
+          <p>Eres un nuevo usuario?
+          <a class="crear" href="registroproyecto.html">Crear una cuenta</a>
+        </p>
+            </div>
     <form class="login" action="loginproyecto.html" method="get">
     <div class="form-group">
-    <label for="email">Email</label>
+    <label for="email">Dirección de correo electrónico</label>
+    </div>
+    <div class="input email">
     <input id="email" type="text" name="email" value="" required>
 </div>
     <div class="form-group">
     <label for="password">Contraseña</label>
+    </div>
+    <div class="input pass">
     <input id="password" type="password" name="password" value="" required>
 </div>
 <div class="form-group">
