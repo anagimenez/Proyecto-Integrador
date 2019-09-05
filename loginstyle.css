@@ -25,7 +25,6 @@ p , a {
 /* BARRA DE NAVEGACION */
 header, footer {
   width: 100%;
-  padding: 20px 0;
   background-color: white;
   position: fixed;
   top: 0;
@@ -34,6 +33,7 @@ header, footer {
 }
 .menu li {
   display: none;
+  font-size: 20px;
 }
 .menu a {
   color: black;
@@ -50,8 +50,8 @@ header, footer {
 .column {
   margin-top: 25px;
   position: absolute;
-  top: 90px;
-  left: 165px;
+  top: 140px;
+  left: 193px;
 }
 .form h1 {
   font-size: 40px;
@@ -86,6 +86,13 @@ strong {
   display: flex;
   justify-content: center;
 }
+button {
+  background-color: blue;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px;
+}
 @media (min-width:1024px) {
   body {
     max-width: 1200px;
@@ -105,9 +112,60 @@ strong {
   .menu, .main-footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
   .column {
     position: static;
+  }
+  .img_wel {
+    overflow: hidden;
+  }
+  .img_wel div {
+    float: left;
+    width: 50%;
+  }
+  .welcome {
+    position: static;
+    text-align: left;
+    transform: translate(0,0);
+    padding: 90px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo a {
+    display: none;
+  }
+  .featured{
+    margin-top: 0;
+  }
+
+  .featured-products {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .product {
+    width: 33.33%;
+    height: 480px;
+  }
+  .mid {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+  }
+  .photo, .photo3 {
+    height: 480px;
+  }
+  .photo2, .photo-containera {
+    height: 240px;
+  }
+
+  footer {
+    display: block;
   }
 }

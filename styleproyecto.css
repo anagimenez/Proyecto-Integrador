@@ -25,24 +25,28 @@ p , a {
 /* BARRA DE NAVEGACION */
 header, footer {
   width: 100%;
-  padding: 20px 0;
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-}
+ }
+ /*
 .menu li {
   display: none;
+  font-size: 20px;
 }
 .menu a {
   font-family: 'Lato', sans-serif;
 }
-.menu .logo {
+/* .menu .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.logo img{
+  width: 100%;
+} */
 /* BIENVENIDA */
 section {
   top: 60px;
@@ -81,7 +85,7 @@ footer {
   body {
     max-width: 720px;
   }
-  
+
 }
 
 @media (min-width:1024px) {
@@ -100,6 +104,7 @@ footer {
   .menu, .main-footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
   .img_wel {
