@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+body {
+  background-color: rgb(246,247,249);
+  max-width: 720px;
+  margin: 0 auto;
+}
+h1 , h2 {
+  font-family: 'Lato', sans-serif;
+}
+p , a {
+  font-family: 'Libre Baskerville', serif;
+}
+/* BARRA DE NAVEGACION */
+header, footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.menu li {
+  display: none;
+}
+.menu a {
+  color: black;
+  font-family: 'Lato', sans-serif;
+}
+.menu .logo, .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container{
+  position: relative;
+}
+.column {
+  margin-top: 25px;
+  position: absolute;
+  top: 90px;
+  left: 165px;
+}
+.form h1 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+strong {
+  font-family: 'Lato', sans-serif;
+  color: blue;
+}
+.login {
+  padding: 20px 0;
+}
+.login label {
+  padding: 10px 0;
+}
+.login input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.new {
+  font-size: 20px;
+}
+#recordarme {
+  width: 15px;
+}
+.remember {
+  margin: 5px 0;
+  text-align: right;
+}
+.submit{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width:1024px) {
+  body {
+    max-width: 1200px;
+  }
+  header, footer {
+    position: relative;
+  }
+  section {
+    top: 0;
+  }
+  .logo span {
+    display: none;
+  }
+  .menu li {
+    display:flex;
+  }
+  .menu, .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .column {
+    position: static;
+  }
+}

@@ -78,7 +78,10 @@ footer {
 }
 
 @media (min-width:768px) {
-
+  body {
+    max-width: 720px;
+  }
+  
 }
 
 @media (min-width:1024px) {
