@@ -65,6 +65,12 @@ section {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.pedido{
+  background-color: lightgrey;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
 /* DESTACADOS */
 .featured {
   margin-top: 60px;
@@ -81,11 +87,24 @@ footer {
   display: none;
 }
 
+.home{
+  background-color: rgba(200, 150, 120, 0.5);
+  padding: 15px;
+}
+.welcome{
+  background-color: rgba(200, 150, 120, 0.5);
+}
+
+@media (min-width : 150px) and (max-width:768px) {
+  .welcome{
+    background-color: rgba(200, 150, 120, 0.5);
+  }
+}
+
 @media (min-width:768px) {
   body {
     max-width: 720px;
   }
-
 }
 
 @media (min-width:1024px) {
@@ -156,5 +175,8 @@ footer {
 
   footer {
     display: block;
+  }
+  .welcome{
+    background-color:rgb(246,247,249);
   }
 }

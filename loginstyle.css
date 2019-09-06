@@ -85,6 +85,7 @@ strong {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  font-size: 16px;
 }
 button {
   background-color: blue;
