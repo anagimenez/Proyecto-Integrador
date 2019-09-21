@@ -32,11 +32,13 @@ function validaciones($info){
   return $error;
 }
 
-function validarRegistro(){
-
-}
-
-function armarUsuario(){
+function armarUser(){
+  return $usuario = [
+    "id" => nextId(),
+    "userName" => trim($_POST['userName']),
+    "email" => trim($_POST['email']),
+    "password" => password_hash($_POST['password'], PASSWORD_DEFAULT),
+  ];
 
 }
 

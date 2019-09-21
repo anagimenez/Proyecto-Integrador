@@ -12,25 +12,25 @@ if($_POST){
   $error = validaciones($_POST);
   var_dump($error);
   $nombreOk = trim($_POST["nombre"]);
-  // $emailOk = trim($_POST["email"]);
-  //
+  $emailOk = trim($_POST["email"]);
+
   // // Opcional crear if para cada asignación de datos correctos. Solo necesitamos colocar la cariable en el value.
   // // if(!isset($errores["email"])){
   // //   $emailOk = $_POST["email"];
   // // }
 
   //Si no hay errores;
-  // if(!$errores){
-  //   // Crear un usuario
-  //   $usuario = armarUsuario();
-  //   //Guardarlo en alguna parte
-  //   guardarUsuario($usuario);
-  //   //Subir la imagen de perfil
-  //   //Auto Loguear usuario (Opcional);
-  //   //Redirigirlo a página Exito;
-  //   header("Location:index.php");
-  //   exit;
-  //   }
+  if(!$errores){
+    // Crear un usuario
+    $usuario = armarUser();
+    //Guardarlo en alguna parte
+    guardarUser($usuario);
+    //Subir la imagen de perfil
+    //Auto Loguear usuario (Opcional);
+    //Redirigirlo a página Exito;
+    header("Location:index.php");
+    exit;
+    }
 }
 ?>
 <html>
@@ -79,38 +79,50 @@ if($_POST){
           <form class="login" action="registroproyecto.php" method="post">
             <div class="form-group">
               <label for="nombre">Nombre</label>
+              <?php if(!isset($error["nombre"])): ?>
+                <input id="nombre" type="text" name="nombre" value="<?= $nombreOk ?>" required>
+              <?php else : ?>
+                <input id="nombre" type="text" name="nombre" value="" required>
+              <?php endif ?>
+              <small>
+                <?php if(isset($error["nombre"])): ?>
+                  <?= $error["nombre"]?>
+                <?php endif?>
+              </small>
             </div>
-            <div class="input nombre">
-              <input id="nombre" type="text" name="nombre" value="" required>
-            </div>
-            <small>
-            <?php if(isset($error["nombre"])): ?>
-                <?= $error["nombre"]?>
-              <?php endif?>
-            </small>
             <div class="form-group">
               <label for="email">Dirección de correo electrónico</label>
-            </div>
-            <div class="input email">
-              <input id="email" type="email" name="email" value="">
+              <?php if(!isset($error["email"])): ?>
+                <input id="email" type="email" name="email" value="<?= $emailOk ?>" required>
+              <?php else : ?>
+                <input id="email" type="email" name="email" value="" required>
+              <?php endif ?>
+              <small>
+                <?php if(isset($error["email"])): ?>
+                  <?= $error["email"]?>
+                <?php endif?>
             </div>
             <div class="form-group">
               <label for="phone">Teléfono  (opcional)</label>
-            </div>
-            <div class="input telefono">
               <input id="phone" type="phonenumber" name="phone" value="">
             </div>
             <div class="form-group">
               <label for="password">Contraseña</label>
-            </div>
-            <div class="input pass">
               <input id="password" type="password" name="password" value="" required>
+              <small>
+                <?php if(isset($error["password"])): ?>
+                  <?= $error["password"]?>
+                <?php endif?>
+              </small>
             </div>
             <div class="form-group">
               <label for="confirmation">Confirmar contraseña</label>
-            </div>
-            <div class="input pass2">
               <input id="confirmation" type="password" name="confirmation" value="" required>
+              <small>
+                <?php if(isset($error["confirmation"])): ?>
+                  <?= $error["confirmation"]?>
+                <?php endif?>
+              </small>
             </div>
             <button class="submit" type="submit" name="button">Crear cuenta</button>
           </form>
