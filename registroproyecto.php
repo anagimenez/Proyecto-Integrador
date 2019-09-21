@@ -21,15 +21,13 @@ if($_POST){
 
   //Si no hay errores;
   if(!$errores){
-    // Crear un usuario
-    $usuario = armarUser();
-    //Guardarlo en alguna parte
-    guardarUser($usuario);
+    $user = armarUser();
+    guardarUser($user);
     //Subir la imagen de perfil
     //Auto Loguear usuario (Opcional);
     //Redirigirlo a página Exito;
-    header("Location:index.php");
-    exit;
+    // header("Location:index.php");
+    // exit;
     }
 }
 ?>
