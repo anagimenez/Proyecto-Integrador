@@ -15,10 +15,10 @@
       <nav class="toggle-nav">
        <div class="container_menu">
               <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cocina.html">La cocina</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="cocina.php">La cocina</a></li>
                 <li class="logo">
-                  <a class="logo" href="index.html">
+                  <a class="logo" href="index.php">
                   <img src="img/boceto.png" alt="Imagen logo">
                 </a>
                   <a href="#" class="toggle-nav">
@@ -38,10 +38,10 @@
           <h1>Iniciar sesión</h1>
           <div class="new">
               <p>Eres un nuevo usuario?
-                <a class="crear" href="registroproyecto.html"><strong>Crear una cuenta</strong></a>
+                <a class="crear" href="registroproyecto.php"><strong>Crear una cuenta</strong></a>
               </p>
           </div>
-          <form class="login" action="loginproyecto.html" method="get">
+          <form class="login" action="loginproyecto.php" method="get">
               <div class="form-group">
                 <label for="email">Dirección de correo electrónico</label>
               </div>

@@ -16,18 +16,18 @@
      <nav class="toggle-nav">
       <div class="container_menu">
              <ul class="menu">
-               <li><a href="README.html">Home</a></li>
-               <li><a href="cocina.html">La cocina</a></li>
-               <li><a href="recetas.html">Recetas</a></li>
+               <li><a href="index.php">Home</a></li>
+               <li><a href="cocina.php">La cocina</a></li>
+               <li><a href="recetas.php">Recetas</a></li>
                <li class="logo">
                  <img src="img/boceto.png" alt="Imagen logo">
                  <a href="#" class="toggle-nav">
                    <span class="fa fa-bars"></span>
                  </a>
                </li>
-               <li><a href="contacto.html">Contacto</a></li>
-               <li><a href="loginproyecto.html">Login</a></li>
-               <li><a href="registroproyecto.html">Registrate</a></li>
+               <li><a href="contacto.php">Contacto</a></li>
+               <li><a href="loginproyecto.php">Login</a></li>
+               <li><a href="registroproyecto.php">Registrate</a></li>
              </ul>
            </div>
           </nav>
@@ -44,7 +44,7 @@
           <br>
           <p>Te invitamos a descubrir nuestras delicias!</p>
           <br>
-          <a class="pedido" href="cocina.html">Haga su pedido</a>
+          <a class="pedido" href="cocina.php">Haga su pedido</a>
         </div>
       </section>
  <!-- Productos destacados -->
@@ -83,10 +83,10 @@
  <!-- Footer -->
       <footer>
        <ul class="main-footer">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="lacocina.html">La cocina</a></li>
-        <li><a href="recetas.html">Recetas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="lacocina.php">La cocina</a></li>
+        <li><a href="recetas.php">Recetas</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
       </ul>
      </footer>
   </body>
