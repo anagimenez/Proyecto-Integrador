@@ -18,7 +18,7 @@ function validaciones($info){ //verifica que no halla errores
   }
   // VERIFICA QUE NO EXISTA EL MAIL EN LA BASE DE DATOS
   if(userExist($dato["email"])!=null) {
-    $error["email"] = "Este e-mail ya esta registrado. Por favor, ingrese uno que no se encuentre en la base de datos.";
+    $error["email"] = "Este e-mail ya esta registrado. Por favor, ingrese uno nuevo.";
   }
   //VALIDA CARACTERES DE LA PASS
   if (strlen($dato["password"])<8) {

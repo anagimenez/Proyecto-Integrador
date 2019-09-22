@@ -14,19 +14,13 @@ if($_POST){
   $nombreOk = trim($_POST["nombre"]);
   $emailOk = trim($_POST["email"]);
 
-  // // Opcional crear if para cada asignación de datos correctos. Solo necesitamos colocar la cariable en el value.
-  // // if(!isset($errores["email"])){
-  // //   $emailOk = $_POST["email"];
-  // // }
-
   //Si no hay errores;
-  if(!$errores){
+  if(!$error){
     $user = armarUser();
     guardarUser($user);
     //Subir la imagen de perfil
-    //Auto Loguear usuario (Opcional);
     //Redirigirlo a página Exito;
-    // header("Location:index.php");
+    header("Location:index.php");
     // exit;
     }
 }

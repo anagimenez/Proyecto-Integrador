@@ -1,34 +1,22 @@
 {
     "usuarios": [
         {
-            "id": 0,
+            "id": 1,
             "nombre": "admin",
             "email": "admin@admin.com",
-            "password": "$2y$10$VH5ExI1L1edcPH112ttJqeFcg2RjRmTauVHNG7oF74LYMt7EeaC1W"
-        },
-        {
-            "id": 1,
-            "nombre": "lalo",
-            "email": "ladsa@jalskdj.com",
-            "password": "$2y$10$mvEW6rvAqOn3tRKXEmCZwe0tqXT0NHnOn1W2oFFyU61z3MqHA4x3e"
+            "password": "$2y$10$4gYgpc.m8lAZ3kAaL8TM\/OqZkYGFlQ2UyD2z\/vDQEIIhrtkNowETe"
         },
         {
             "id": 2,
-            "nombre": "octa",
-            "email": "octa@incorregibles.com.ar",
-            "password": "$2y$10$AjJsFo.l70J.nl.oqYlsQe6lf9DPu6iSJMltZPHhVnptmC6vzZ3ta"
+            "nombre": "lalo",
+            "email": "lala@asdas-com",
+            "password": "$2y$10$VVIZvmSz1t2flTpRWeQsyOsvfBWW0Pkq7v.LW\/PxvVeBAvE7dbuNq"
         },
         {
             "id": 3,
-            "nombre": "octa",
-            "email": "octa@incorregibles.com.ar",
-            "password": "$2y$10$aUPdPRyGi.lLL3A\/jUmvfu1u.Nv2swRUWvodCBg3eULKxYI31pJ\/."
-        },
-        {
-            "id": 4,
-            "nombre": "pedro",
-            "email": "octa@incorregibles.com.ar",
-            "password": "$2y$10$CklvpfME07QYjQPlZymEROD8.jgiLydsKi9HPY1.KxXvmNeCKzqa."
+            "nombre": "Vero",
+            "email": "Vero@Planeta.com",
+            "password": "$2y$10$5AHoXlxCW6hcyJSD4HKSOeclLqFOjLkCOPTMwATkiZIbot0fBGpBO"
         }
     ]
 }
