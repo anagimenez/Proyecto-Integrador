@@ -13,15 +13,21 @@ function validaciones($info){ //verifica que no halla errores
     }
   }
   // VALIDA NOMBRE ALFABETICO
-  if (!ctype_alpha($dato["nombre"])){
+  if (strlen($dato["nombre"])==0) {
+    $error["nombre"] = "Este campo no puede estar vacio";
+  } else if (!ctype_alpha($dato["nombre"])){
     $error["nombre"] = "Por favor, ingrese caracteres alfabéticos";
   }
   // VERIFICA QUE NO EXISTA EL MAIL EN LA BASE DE DATOS
-  if(userExist($dato["email"])!=null) {
+  if (strlen($dato["email"])==0) {
+    $error["email"] = "Este campo no puede estar vacio";
+  } else if(userExist($dato["email"])!=null) {
     $error["email"] = "Este e-mail ya esta registrado. Por favor, ingrese uno nuevo.";
   }
   //VALIDA CARACTERES DE LA PASS
-  if (strlen($dato["password"])<8) {
+  if (strlen($dato["password"])==0) {
+    $error["password"] = "Este campo no puede estar vacio";
+  } else if (strlen($dato["password"])<8) {
     $error["password"] = "La contraseña debe tener como minimo 8 caracteres";
   }
   //CONFIRMA QUE SEA LA CONTRASEÑA CORRECTA

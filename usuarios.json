@@ -17,6 +17,30 @@
             "nombre": "Vero",
             "email": "Vero@Planeta.com",
             "password": "$2y$10$5AHoXlxCW6hcyJSD4HKSOeclLqFOjLkCOPTMwATkiZIbot0fBGpBO"
+        },
+        {
+            "id": 4,
+            "nombre": "octa",
+            "email": "octa@incorregibles.com.ar",
+            "password": "$2y$10$nguSaZ86KFmqKf\/wyBllteWUHsvnPivTB\/ghd1a4JuOs1vEcZFfIS"
+        },
+        {
+            "id": 5,
+            "nombre": "Ana",
+            "email": "anagz@hotmail.com",
+            "password": "$2y$10$pCeJlt92kiLM0t4V9pVGp.IzrVSW2FJbKe550YiBnx1UcuMDt4TJ6"
+        },
+        {
+            "id": 6,
+            "nombre": "ale",
+            "email": "ale@dh.com",
+            "password": "$2y$10$3ybEBpbc8NE.zY5BxA1f8OabiHidlYzaHEZ0vMHPzhyFDkdwDFX.O"
+        },
+        {
+            "id": 7,
+            "nombre": "naim",
+            "email": "naim@hotmail.com",
+            "password": "$2y$10$\/Lo8GAb2gHw.hRwx7YAA6e5uDqYNDB4eDpy4TpNyGuOOifiXlseHq"
         }
     ]
 }
