@@ -61,39 +61,63 @@ strong {
   font-family: 'Lato', sans-serif;
   color: blue;
 }
-.login {
-  padding: 20px 0;
-  width: 30%;
+/* SECCION LOGIN Y REGISTRO */
+section{
+  display: flex;
+  flex-direction: row;
 }
-.login label {
-  padding: 10px 0;
-}
-.login input {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.new {
-  font-size: 20px;
-}
-#recordarme {
-  width: 15px;
-}
-.remember {
-  margin: 5px 0;
-  text-align: right;
-}
-.submit{
-  margin-top: 10px;
+.login, .register{
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
-  font-size: 16px;
+  align-items: center;
+  width: 50%;
 }
-button {
-  background-color: blue;
-  border-radius: 10px;
+.login {
+  background-color: #F8EE97;
+}
+.register {
+  background-color: #97F8A0;
+}
+.cuadrado1{
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 257px;
+  height: 201px;
+}
+.cuadrado2{
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 213px;
+  height: 157px;
+}
+.cuadrado3{
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 255px;
+  height: 299px;
+}
+.cuadrado4{
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 212px;
+  height: 255px;
+}
+form small {
+  color: red;
+}
+.reg button{
+  background-color: #F8EE97;
   border: none;
-  color: white;
   padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width:1024px) {
   body {

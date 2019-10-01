@@ -24,6 +24,16 @@ function validaciones($info){ //verifica que no halla errores
   } else if(userExist($dato["email"])!=null) {
     $error["email"] = "Este e-mail ya esta registrado. Por favor, ingrese uno nuevo.";
   }
+  //VALIDA QUE LA IMAGEN SE SUBA SIN ERRORES
+  if($_FILES["avatar"]["error"]===UPLOAD_ERR_OK){
+    $error["avatar"] = "Hubo un problema con la carga. Intente nuevamente";
+  } else {
+    $ext = pathinfo($_FILES["avatar"]["name"],PATHINFO_EXTENSION);
+    if (!$ext == "jpg" && $ext == "jpeg" && $ext == "png"){
+      $error["avatar"] = "El archivo debe ser una imagen.";
+    }
+  }
+
   //VALIDA CARACTERES DE LA PASS
   if (strlen($dato["password"])==0) {
     $error["password"] = "Este campo no puede estar vacio";
@@ -61,6 +71,14 @@ function guardarUser($newUser){//Guardar un usuario en la base de datos.
   $array['usuarios'][] = $newUser;
   $json = json_encode($array,JSON_PRETTY_PRINT);
   file_put_contents("usuarios.json", $json);
+}
+
+function guardarAvatar (){
+  $nombre = $_FILES["avatar"]["name"];
+  $archivo = $_FILES["avatar"]["tmp"];
+  $ext = pathinfo($nombre, PATHINFO_EXTENSION);
+  $guardado = "avatares/". $_POST["email"] . $ext;
+  move_uploaded_file($archivo,$guardado);
 }
 
 function UserExist($dato){
