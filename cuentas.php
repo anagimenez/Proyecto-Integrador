@@ -56,9 +56,15 @@ if($_POST && isset($_POST["register"])){
     </header>
     <section class=>
       <div class="login">
+        <h1>Iniciar sesión</h1>
+        <div class="new">
+            <p>Eres un nuevo usuario?
+              <a class="crear" href="registroproyecto.php"><strong>Crear una cuenta</strong></a>
+            </p>
+        </div>
         <div class="cuadrado1">
           <div class="cuadrado2">
-            <form class="" action="cuentas.php" method="post">
+            <form class="log" action="cuentas.php" method="post">
               <div class="form-group">
                 <label for="email">Dirección de email</label>
               </div>
@@ -82,61 +88,89 @@ if($_POST && isset($_POST["register"])){
         </div>
       </div>
       <div class="register">
+        <h1>Registro</h1>
+        <div class="new">
+          <p>¿Ya tienes una cuenta?
+              <a class="inicia" href="cuentas.php"><strong>Inicia sesión</strong></a>
+          </p>
+        </div>
         <div class="cuadrado3">
           <div class="cuadrado4">
             <form class="reg" action="cuentas.php" method="post" enctype="multipart/form-data">
-              <div class="Name">
+              <div class="name">
                 <label for="nombre">Nombre</label>
+              </div>
+              <div>
                 <?php if(!isset($error["nombre"])): ?>
                   <input id="nombre" type="text" name="nombre" value="<?= $nombreOk ?>">
                 <?php else : ?>
                   <input id="nombre" type="text" name="nombre" value="">
                 <?php endif ?>
+              </div>
+              <div>
                 <small>
                   <?php if(isset($error["nombre"])): ?>
                     <?= $error["nombre"]?>
                   <?php endif?>
                 </small>
               </div>
-              <div class="Email">
+              <div class="email">
                 <label for="email">Dirección de email</label>
+              </div>
+              <div>
                 <?php if(!isset($error["email"])): ?>
                   <input id="email" type="email" name="email" value="<?= $emailOk ?>">
                 <?php else : ?>
                   <input id="email" type="email" name="email" value="">
                 <?php endif ?>
+              </div>
+              <div>
                 <small>
                   <?php if(isset($error["email"])): ?>
                     <?= $error["email"]?>
                   <?php endif?>
                 </small>
               </div>
-              <div class="Phone">
+              <div class="phone">
                 <label for="phone">Teléfono  (opcional)</label>
+              </div>
+              <div>
                 <input id="phone" type="phonenumber" name="phone" value="">
               </div>
-              <div class="Picture">
+              <div class="picture">
                 <label for="avatar">Imagen de perfil</label>
+              </div>
+              <div>
                 <input type="file" id="avatar" class="Picture" name="avatar">
                 <span class="small text-danger"></span>
+              </div>
+              <div>
                 <small>
                   <?php if(isset($error["avatar"])): ?>
                     <?= $error["avatar"]?>
                   <?php endif?>
                 </small>
               </div>
-              <div class="Pass">
+              <div class="pass">
                 <label for="password">Contraseña</label>
+              </div>
+              <div>
                 <input id="password" type="password" name="password" value="">
+              </div>
+              <div>
                 <small>
                   <?php if(isset($error["password"])): ?>
                     <?= $error["password"]?>
                   <?php endif?>
                 </small>
               </div>
-              <div class="Pass2">
+              <div class="pass2">
                 <label for="confirmation">Confirmar Contraseña</label>
+              </div>
+              <div>
                 <input id="confirmation" type="password" name="confirmation" value="">
+              </div>
+              <div>
                 <small>
                   <?php if(isset($error["confirmation"])): ?>
                     <?= $error["confirmation"]?>

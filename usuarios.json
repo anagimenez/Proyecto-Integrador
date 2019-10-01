@@ -41,6 +41,18 @@
             "nombre": "naim",
             "email": "naim@hotmail.com",
             "password": "$2y$10$\/Lo8GAb2gHw.hRwx7YAA6e5uDqYNDB4eDpy4TpNyGuOOifiXlseHq"
+        },
+        {
+            "id": 8,
+            "nombre": "pa",
+            "email": "123@123.com.ar",
+            "password": "$2y$10$uUUcfLGYczvDARmtat7PzezTsyCS3CZPCl2PET1ZIxEa5CNuhsd2m"
+        },
+        {
+            "id": 9,
+            "nombre": "karly",
+            "email": "342@gtt.gom",
+            "password": "$2y$10$cEtigHqwivTYx4\/Aaas2Ju213yVGEdXVi1Bcpsd51w6uN4Va27e2i"
         }
     ]
 }
