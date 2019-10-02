@@ -92,8 +92,39 @@ function UserExist($dato){
   return null;
 }
 
+//login
 
+function validarLogin($dato){
+  $error = [];
 
+//email
+if(strlen($dato["email"]) == 0){
+  $errores["email"] = "Este campo no puede estar vacio";
+} else if(!filter_var($dato["email"], FILTER_VALIDATE_EMAIL)){
+  $error["email"] = "Por favor, ingrese un email con formato valido.";
+} else if(!UserExist($dato["email"])){
+  $error["email"] = "El usuario no existe. Por favor registrese";
+}
+
+//password
+if(strlen($dato["password"]) == 0){
+  $error["password"] = "Este campo no puede estar vacio";
+} else {
+  $usuario = UserExist($dato["email"]);
+  if(!password_verify($dato["password"], $usuario["password"])){
+    $error["password"] = "La contraseña es incorrecta.";
+  }
+}
+return $error;
+}
+
+function loguearUsuario(){
+  $_SESSION["email"] = $_POST["email"];
+}
+
+function usuarioLogueado(){
+  return isset($_SESSION["email"])
+}
 
 
 
