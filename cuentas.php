@@ -26,35 +26,57 @@ if($_POST && isset($_POST["register"])){
 ?>
 <html lang="en" dir="ltr">
   <head>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-
-    <link rel="stylesheet" href="loginstyle.css">
-    <meta name="viewport" content="width">
     <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="stylesheetboots.css">
+    <link rel="stylesheet" href="loginstyle.css"> -->
+    <link rel="stylesheet" href="laposta.css">
     <title>Leti's Bakery</title>
   </head>
   <body>
-    <header>
-     <nav class="toggle-nav">
-      <div class="container_menu">
-             <ul class="menu">
-               <li><a href="index.php">Home</a></li>
-               <li><a href="cocina.php">La cocina</a></li>
-               <li><a href="recetas.php">Recetas</a></li>
-               <li class="logo">
-                 <img src="img/boceto.png" alt="Imagen logo">
-                 <a href="#" class="toggle-nav">
-                   <span class="fa fa-bars"></span>
-                 </a>
-               </li>
-               <li><a href="contacto.php">Contacto</a></li>
-               <li><a href="loginproyecto.php">Login</a></li>
-               <li><a href="registroproyecto.php">Registrate</a></li>
-             </ul>
-           </div>
-          </nav>
+    <header class="">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.php">HOME</a>
+            </li>
+            <li>
+              <a href="#">LA COCINA</a>
+            </li>
+            <li>
+              <a href="#">CONTACTO</a>
+            </li>
+            <li>
+              <a href="#">CUENTAS</a>
+            </li>
+            <!-- <li>
+              <a href="#">CHEF's</a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="index.php">
+            <img src="img/boceto.png" alt="">
+          </a>
+        </div>
+        <div class="redes">
+            <ul>
+              <li>
+                <a id="tw" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a id="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a id="insta" href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+        </div>
     </header>
-    <section class=>
+    <section class="formularios">
       <div class="login">
         <h1>Iniciar sesión</h1>
         <div class="new">
@@ -189,9 +211,5 @@ if($_POST && isset($_POST["register"])){
 
       </div>
     </footer>
-
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
   </body>
 </html>

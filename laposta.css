@@ -1,64 +1,118 @@
-* {
+*{
   box-sizing: border-box;
   margin: 0 auto;
 }
-ul, ol {
-  padding: 0;
-  margin: 0;
+ul,ol{
   list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 a {
   color: black;
   text-decoration: none;
+  margin-left: 30px;
 }
 body {
-  background-color: rgb(246,247,249);
-  max-width: 720px;
-  margin: 0 auto;
+  background-color: white;
 }
-h1 , h2 {
-  font-family: 'Lato', sans-serif;
-}
-p , a {
-  font-family: 'Libre Baskerville', serif;
-}
-/* BARRA DE NAVEGACION */
-/* header, footer {
-  width: 100%;
+header {
   background-color: white;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 999;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 90;
 }
-.menu li {
-  display: none;
-  font-size: 20px;
+.menu,.redes {
+  width: 33.33%;
 }
-.menu a {
-  color: black;
-  font-family: 'Lato', sans-serif;
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.menu .logo, .form {
+.logo  {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.logo a {
+  margin: 0;
+}
+.menu2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.redes {
+  display: flex;
+  justify-content: space-around;
+}
+#tw {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 90px;
+}
+#fb{
+  padding: 10px 14px;
+  border: 1px solid black;
+  border-radius: 90px;
+}
+#insta{
+  padding: 10px 12px;
+  border: 1px solid black;
+  border-radius: 90px;
+}
+/* ACA VA LA SECCION PARA NAVEGAR */
+.webbody {
+position: relative;
+top: 124px;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.image, .welcome {
+  width: 50%;
+}
+.image img {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #97F8A0;
 }
-.container{
-  position: relative;
+.cuadradoa{
+  border: 2px solid white;
+  border-radius: 30px;
+  width: 591px;
+  padding: 25px;
 }
-.column {
-  margin-top: 25px;
-  position: absolute;
-  top: 140px;
-  left: 193px;
+.cuadradob{
+  background-color: white;
+  border-radius: 30px;
+  width: 550px;
+  padding: 20px;
 }
-.form h1 {
-  font-size: 40px;
-  padding: 20px 0;
-} */
+.separador {
+  width: 100%;
+  height: 150px;
+}
 /* SECCION LOGIN Y REGISTRO */
-section{
+.formularios {
+  position: relative;
+  top: 124px;
   display: flex;
   flex-direction: row;
 }
@@ -136,7 +190,7 @@ form small {
   color: #F8EE97;
   /* -webkit-text-stroke: 1px black; */
 }
-@media (min-width:1024px) {
+/* @media (min-width:1024px) {
   body {
     max-width: 1200px;
   }
@@ -211,4 +265,4 @@ form small {
   footer {
     display: block;
   }
-}
+} */

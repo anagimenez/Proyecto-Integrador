@@ -2,58 +2,83 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Iniciar sesión</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="widht=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-  <meta name=”viewport” content=”width=device-width, initial-scale=1.0, shrink-to-fit=no”>
-  <link rel="stylesheet" href="styleproyecto.css">
-  <link rel="stylesheet" href="loginstyle.css">
+  <!-- <link rel="stylesheet" href="stylesheetboots.css">
+  <link rel="stylesheet" href="loginstyle.css"> -->
+  <link rel="stylesheet" href="laposta.css">
 </head>
   <body>
-    <header>
-     <nav class="toggle-nav">
-      <div class="container_menu">
-             <ul class="menu">
-               <li><a href="index.php">Home</a></li>
-               <li><a href="cocina.php">La cocina</a></li>
-               <li><a href="recetas.php">Recetas</a></li>
-               <li class="logo">
-                 <img src="img/boceto.png" alt="Imagen logo">
-                 <a href="#" class="toggle-nav">
-                   <span class="fa fa-bars"></span>
-                 </a>
-               </li>
-               <li><a href="contacto.php">Contacto</a></li>
-               <li><a href="loginproyecto.php">Login</a></li>
-               <li><a href="registroproyecto.php">Registrate</a></li>
-             </ul>
-           </div>
-          </nav>
-     </header>
- <!-- foto home y parrafo de bienvenida -->
-      <section class="img_wel">
-        <div class="img_container">
-          <img class="image_home" src="img/masadepan.jpg" alt="Imagen home">
+    <header class="">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#">LA COCINA</a>
+            </li>
+            <li>
+              <a href="#">CONTACTO</a>
+            </li>
+            <li>
+              <a href="cuentas.php">CUENTAS</a>
+            </li>
+            <!-- <li>
+              <a href="#">CHEF's</a>
+            </li> -->
+          </ul>
         </div>
-        <div class="welcome">
-          <h1>Bienvenido!</h1>
-          <br>
-          <p class="text">Nuestra pasión es cocinar y queremos que nuestros comensales se sientan a gusto.</p>
-          <br>
-          <p>Te invitamos a descubrir nuestras delicias!</p>
-          <br>
-          <a class="pedido" href="cocina.php">Haga su pedido</a>
+        <div class="logo">
+          <a href="#">
+            <img src="img/boceto.png" alt="">
+          </a>
         </div>
-      </section>
+        <div class="redes">
+            <ul>
+              <li>
+                <a id="tw" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a id="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a id="insta" href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+        </div>
+    </header>
+    <div class="webbody">
+      <main>
+        <section class="image">
+          <img src="img/masadepan.jpg" alt="">
+        </section>
+        <aside class="welcome">
+          <div class="cuadradoa">
+            <div class="cuadradob">
+            <h1>Bienvenidos a nuestra cocina!</h1>
+            <p>
+              Nuestra pasión es cocinar y queremos que nuestros comensales se sientan a gusto.<br>
+              Te invitamos a descubrir nuestras delicias!<br>
+            </p>
+            <a href="#">Haga su Pedido</a>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <div class"separador">
+        <img src="" alt="">
+      </div>
+    </div>
  <!-- Productos destacados -->
-      <div class="featured">
+      <!-- <div class="featured">
         <h1>PRODUCTOS DESTACADOS</h1>
       </div>
-      <section class="featured-products">
+      <section class="featured-products"> -->
         <!-- <h1>PRODUCTOS DESTACADOS</h1> -->
-        <article class="product">
+        <!-- <article class="product">
           <div class="photo-container">
             <img class="photo" src="img/tortadenuez.jpg" alt="producto 1">
           </div>
@@ -79,15 +104,15 @@
         </div>
         <h2 class="home">Alfajores de Maní</h2>
         </article>
-      </section>
+      </section> -->
  <!-- Footer -->
-      <footer>
+      <!-- <footer>
        <ul class="main-footer">
         <li><a href="index.php">Home</a></li>
         <li><a href="lacocina.php">La cocina</a></li>
         <li><a href="recetas.php">Recetas</a></li>
         <li><a href="contacto.php">Contacto</a></li>
       </ul>
-     </footer>
+     </footer> -->
   </body>
 </html>
