@@ -63,7 +63,9 @@
               Nuestra pasión es cocinar y queremos que nuestros comensales se sientan a gusto.<br>
               Te invitamos a descubrir nuestras delicias!<br>
             </p>
-            <a href="#">Haga su Pedido</a>
+            <button type="" name="button">
+              <a href="#">Haga su Pedido</a>
+            </button>
             </div>
           </div>
         </aside>

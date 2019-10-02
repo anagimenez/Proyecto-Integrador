@@ -97,13 +97,17 @@ main {
   border: 2px solid white;
   border-radius: 30px;
   width: 591px;
-  padding: 25px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap
 }
 .cuadradob{
   background-color: white;
   border-radius: 30px;
   width: 550px;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap
 }
 .separador {
   width: 100%;
@@ -172,13 +176,16 @@ form small {
   display: flex;
   justify-content: center;
 }
-.reg button{
+.reg button, .welcome button{
   background-color: #F8EE97;
   border: none;
   padding: 10px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
+}
+.welcome button a {
+  margin-left: 0px;
 }
 .login strong {
   font-family: 'Lato', sans-serif;
