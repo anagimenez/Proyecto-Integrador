@@ -18,7 +18,7 @@
               <a href="#">HOME</a>
             </li>
             <li>
-              <a href="#">LA COCINA</a>
+              <a href="cocina.php">LA COCINA</a>
             </li>
             <li>
               <a href="#">CONTACTO</a>
