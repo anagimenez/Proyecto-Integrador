@@ -5,10 +5,12 @@ $emailOk = "";
 
 //si el formulario viene por POST;
 
+
+
 if($_POST && isset($_POST["register"])){
   //tenemos que detectar errores y mostrarlos al usuario.
   $error = validaciones($_POST);
-  var_dump($error);
+  //var_dump($error);
   $nombreOk = trim($_POST["nombre"]);
   $emailOk = trim($_POST["email"]);
 
@@ -104,7 +106,7 @@ if($_POST && isset($_POST["register"])){
                     <label for="recordarme">Recordarme</label>
                   </div>
                   <input type="hidden" name="login" value="">
-                    <button class="submit" type="submit" name="button">Iniciar sesión</button>
+                  <button class="submit" type="submit" name="button">Iniciar sesión</button>
             </form>
           </div>
         </div>

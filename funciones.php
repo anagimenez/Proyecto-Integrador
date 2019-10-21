@@ -75,7 +75,7 @@ function guardarUser($newUser){//Guardar un usuario en la base de datos.
 
 function guardarAvatar (){
   $nombre = $_FILES["avatar"]["name"];
-  $archivo = $_FILES["avatar"]["tmp"];
+  $archivo = $_FILES["avatar"]["tmp_name"];
   $ext = pathinfo($nombre, PATHINFO_EXTENSION);
   $guardado = "avatares/". $_POST["email"] . $ext;
   move_uploaded_file($archivo,$guardado);
@@ -123,7 +123,7 @@ function loguearUsuario(){
 }
 
 function usuarioLogueado(){
-  return isset($_SESSION["email"])
+  return isset($_SESSION["email"]);
 }
 
 

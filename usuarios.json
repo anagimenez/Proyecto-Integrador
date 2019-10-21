@@ -53,6 +53,12 @@
             "nombre": "karly",
             "email": "342@gtt.gom",
             "password": "$2y$10$cEtigHqwivTYx4\/Aaas2Ju213yVGEdXVi1Bcpsd51w6uN4Va27e2i"
+        },
+        {
+            "id": 10,
+            "nombre": "rodrigo",
+            "email": "pollo_2@hotmail.com",
+            "password": "$2y$10$11hi9apkPAckwkw.b0mvU.IqxKe9KrhHuTfdLEnqkuml8YWANGryq"
         }
     ]
 }
