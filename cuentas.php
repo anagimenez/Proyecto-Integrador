@@ -1,11 +1,9 @@
 <?php
-include "funciones.php";
+include "init.php";
 $nombreOk = "";
 $emailOk = "";
 
 //si el formulario viene por POST;
-
-
 
 if($_POST && isset($_POST["register"])){
   //tenemos que detectar errores y mostrarlos al usuario.
@@ -16,8 +14,9 @@ if($_POST && isset($_POST["register"])){
 
   //Si no hay errores;
   if(!$error){
-    $user = armarUser();
-    guardarUser($user);
+    //$user = armarUser();
+    $user = new Usuario($_POST);
+    $baseDatos->guardarUser($user, $file);
     //Subir la imagen de perfil
     guardarAvatar();
     //Redirigirlo a página Exito;
