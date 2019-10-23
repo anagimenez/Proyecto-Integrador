@@ -44,7 +44,7 @@ class Dbjson extends db{
     foreach ($array['usuarios'] as $userData) {
       if($userData['email'] === $email){
         $userObj = new Usuario($userData);
-        return $useObj;
+        return $userObj;
       }
     }
     return null;

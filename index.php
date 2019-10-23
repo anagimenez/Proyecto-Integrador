@@ -1,3 +1,18 @@
+<?php
+include "init.php";
+
+//loguear usuario si tengo cookie
+if(isset($_COOKIE['email'])){
+  $auth->loguearUsuario($_COOKIE['email']);
+}
+if($auth->usuarioLogueado()){
+  $usuario = $baseDatos->UserExist($_SESSION['email']);
+
+} else {
+  $usuario = "";
+}
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +63,7 @@
                 <a id="insta" href="#"><i class="fab fa-instagram"></i></a>
               </li>
             </ul>
+                      <button type="button" class="btn btn-light d-md-none" name="button"><i class="fas fa-bars"></i></button>
         </div>
     </header>
     <div class="webbody">

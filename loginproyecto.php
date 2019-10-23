@@ -1,12 +1,18 @@
 <?php
-include "funciones.php";
+//include "funciones.php";
+include "init.php";
+
+if($auth->usuarioLogueado()){
+  header("Location:index.php");
+  exit;
+}
 $error = [];
 
 if($_POST){
-  $error = validarLogin($_POST);
+  $error = Validator::validarLogin($_POST);
 
 if(!error){
-  loguearUsuario();
+  $auth->loguearUsuario($_POST['email']);
   header("Location:index.php");
   exit;
 }

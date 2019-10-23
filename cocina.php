@@ -121,10 +121,10 @@
      <!-- Footer -->
           <footer>
            <ul class="main-footer">
-            <li><a href="README.html">Home</a></li>
-            <li><a href="cocina.html">La cocina</a></li>
-            <li><a href="recetas.html">Recetas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="cocina.php">La cocina</a></li>
+            <li><a href="">Recetas</a></li>
+            <li><a href="">Contacto</a></li>
           </ul>
          </footer>
       </body>
