@@ -1,12 +1,12 @@
 <?php
 include "clases/dbjson.php";
-include "patovica.php";
+include "clases/patovica.php";
 
-include "clases/usuario.php";
+include "clases/usuarios.php";
 
 //$auth = new Auth;
 // var_dump($auth);
 
-$file = "db.json";
+$file = "usuarios.json";
 $baseDatos = new DbJson($file);
 ?>

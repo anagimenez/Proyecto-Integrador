@@ -1,9 +1,10 @@
 <?php
 
 class Validator{
-  global $baseDatos;
 
   public function validaciones($info){ //verifica que no halla errores
+    global $baseDatos;
+
     $error = [];
     $dato = [];
 

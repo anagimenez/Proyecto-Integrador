@@ -1,6 +1,6 @@
 <?php
 
-include "db.php";
+include "base-de-datos.php";
 
 class Dbjson extends db{
   private $baseDatos;
@@ -36,7 +36,7 @@ class Dbjson extends db{
     $array['usuarios'][] = $newUser;
     $baseDatos = json_encode($array,JSON_PRETTY_PRINT);
     file_put_contents("usuarios.json", $baseDatos);
-  }  
+  }
 
   public function UserExist(string $email){
     //$baseDatos = file_get_contents("usuarios.json");

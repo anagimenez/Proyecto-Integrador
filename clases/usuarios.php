@@ -7,7 +7,7 @@ class Usuario {
   private $nombreAvatar;
 
   function __construct (Array $array){
-    global $baseDatos
+    global $baseDatos;
     //ARMA AL USUARIO PREGUNTANDO DE DONDE VIENE, SI ES DESDE EL REGISTRO O LA BASE DE DATOS
     if(isset($_POST["register"])){
       $this->id = $baseDatos->newUserId();
@@ -27,9 +27,9 @@ class Usuario {
   public function getNombre(){
     return $this->nombre;
   }
-//  public function getApellido(){
-    return $this->apellido;
-  }
+ // public function getApellido(){
+ //    return $this->apellido;
+ //  }
   public function getEmail(){
     return $this->email;
   }
@@ -41,7 +41,6 @@ class Usuario {
       $ext = pathinfo($nombre, PATHINFO_EXTENSION);
       return $ext;
     }
-  }
 }
 
  ?>
