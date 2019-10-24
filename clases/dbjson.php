@@ -2,7 +2,7 @@
 
 include "base-de-datos.php";
 
-class Dbjson extends db{
+class Dbjson extends Db {  
   private $baseDatos;
 
   function __construct(string $file){
